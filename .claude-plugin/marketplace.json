@@ -12,8 +12,8 @@
     {
       "name": "hb-code-reviewer",
       "source": {
-        "source": "github",
-        "repo": "hackberrybay/hb-code-reviewer",
+        "source": "url",
+        "url": "https://github.com/hackberrybay/hb-code-reviewer.git",
         "ref": "main"
       },
       "description": "Code quality review, best practices enforcement, and self-improving rules for the Hackberry TypeScript team.",
