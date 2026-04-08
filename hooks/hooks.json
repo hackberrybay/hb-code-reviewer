@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "file=\"${CLAUDE_TOOL_RESULT_FILE_PATH:-}\"; case \"$file\" in *.ts|*.tsx|*.js|*.jsx) echo \"[hb-reviewer] $file modified — run /review-file $file to check for issues\" ;; esac; exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}

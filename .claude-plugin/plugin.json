@@ -1,0 +1,9 @@
+{
+  "name": "hb-code-reviewer",
+  "version": "1.0.0",
+  "description": "Code quality review, best practices enforcement, and self-improving rules for TypeScript teams. Covers NestJS, React Native/Expo, and general TypeScript. Includes PR review, file review, OWASP security review, and a self-improvement loop.",
+  "author": {
+    "name": "Hackberry",
+    "email": "developer@hackberry.se"
+  }
+}

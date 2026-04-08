@@ -1,0 +1,33 @@
+{
+  "name": "hb-marketplace",
+  "owner": {
+    "name": "Hackberry",
+    "email": "developer@hackberry.se"
+  },
+  "metadata": {
+    "description": "Hackberry team Claude Code plugin marketplace",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "hb-code-reviewer",
+      "source": {
+        "source": "github",
+        "repo": "hackberry/hb-code-reviewer",
+        "ref": "main"
+      },
+      "description": "Code quality review, best practices enforcement, and self-improving rules for the Hackberry TypeScript team.",
+      "version": "1.0.0",
+      "author": "Hackberry",
+      "category": "code-quality",
+      "tags": [
+        "typescript",
+        "review",
+        "security",
+        "nestjs",
+        "react-native",
+        "best-practices"
+      ]
+    }
+  ]
+}
