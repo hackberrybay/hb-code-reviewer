@@ -34,9 +34,17 @@ Note: this redirects all GitHub git operations on your machine to HTTPS. Skip it
 
 After this, all skills (`/review-pr`, `/review-file`, etc.) are available in every project without any `--plugin-dir` flag.
 
-### Update
+### Updates
 
-When the plugin is updated, each developer runs:
+To enable auto-updates (recommended), do this once after installing:
+
+```
+/plugin
+```
+
+Go to **Marketplaces** → select `hb-marketplace` → enable auto-update. Claude Code will then update the plugin automatically on startup.
+
+To update manually:
 
 ```
 /plugin update hb-code-reviewer
