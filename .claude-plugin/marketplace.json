@@ -18,7 +18,7 @@
       },
       "description": "Code quality review, best practices enforcement, and self-improving rules for the Hackberry TypeScript team.",
       "version": "1.0.0",
-      "author": "Hackberry",
+      "author": { "name": "Hackberry", "email": "developer@hackberry.se" },
       "category": "code-quality",
       "tags": [
         "typescript",
