@@ -10,6 +10,18 @@ Built for the Hackberry stack (NestJS, React Native/Expo) but applicable to any 
 
 This plugin is a **global standard** — installed once per developer, available in every project.
 
+### Prerequisites
+
+Claude Code clones plugins via SSH. If you have SSH keys configured for GitHub, no extra setup is needed.
+
+If you don't have SSH keys set up and get a `Permission denied (publickey)` error during install, run this once to fall back to HTTPS:
+
+```
+git config --global url."https://github.com/".insteadOf "git@github.com:"
+```
+
+Note: this redirects all GitHub git operations on your machine to HTTPS. Skip it if you use SSH keys.
+
 ### Install (one-time per developer)
 
 ```
