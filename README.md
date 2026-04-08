@@ -13,7 +13,11 @@ This plugin is a **global standard** — installed once per developer, available
 ### Install (one-time per developer)
 
 ```
-/plugin install https://raw.githubusercontent.com/hackberrybay/hb-code-reviewer/main/.claude-plugin/marketplace.json
+/plugin marketplace add https://raw.githubusercontent.com/hackberrybay/hb-code-reviewer/main/.claude-plugin/marketplace.json
+```
+
+```
+/plugin install hb-code-reviewer@hb-marketplace
 ```
 
 After this, all skills (`/review-pr`, `/review-file`, etc.) are available in every project without any `--plugin-dir` flag.
