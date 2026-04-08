@@ -5,5 +5,8 @@
   "author": {
     "name": "Hackberry",
     "email": "developer@hackberry.se"
-  }
+  },
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "hooks": "./hooks/hooks.json"
 }
