@@ -11,6 +11,5 @@
     "./agents/code-reviewer.md",
     "./agents/security-reviewer.md",
     "./agents/issue-logger.md"
-  ],
-  "hooks": "./hooks/hooks.json"
+  ]
 }
