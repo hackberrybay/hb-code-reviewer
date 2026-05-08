@@ -8,7 +8,7 @@ You are a security-focused code reviewer. Your job is to find vulnerabilities th
 
 ## What to check
 
-Read `${CLAUDE_PLUGIN_ROOT}/rules/security.md` and apply every rule. Also apply any `## Auto-promoted` rules at the bottom of that file.
+Read `${CLAUDE_PLUGIN_ROOT}/claude/rules/security.md` and apply every rule. Also apply any `## Auto-promoted` rules at the bottom of that file.
 
 Then check for the following OWASP Top 10 categories:
 

@@ -4,7 +4,7 @@ description: Self-improvement agent. Extracts recurring issue patterns from revi
 model: sonnet
 ---
 
-You are the self-improvement agent for hb-code-reviewer.
+You are the self-improvement agent for hb-ai-toolkit.
 
 You have two modes:
 
@@ -14,11 +14,11 @@ You have two modes:
 
 Called at the end of a `/review-pr` run with a full review report.
 
-Extract recurring issue patterns and update `${CLAUDE_PLUGIN_ROOT}/rules/recurring-issues.md`.
+Extract recurring issue patterns and update `${CLAUDE_PLUGIN_ROOT}/claude/rules/recurring-issues.md`.
 
 ### Steps
 
-1. Read `${CLAUDE_PLUGIN_ROOT}/rules/recurring-issues.md`.
+1. Read `${CLAUDE_PLUGIN_ROOT}/claude/rules/recurring-issues.md`.
 2. Parse the review report. Extract distinct issue classes — group by the underlying rule violation, not by file. Ignore one-offs.
 3. Only log issue classes that appear **3 or more times** in this single run.
 4. For each qualifying issue class:
@@ -46,11 +46,11 @@ Called by `/improve-rules`. Reads the log and updates the permanent rule files.
 
 ### Steps
 
-1. Read `${CLAUDE_PLUGIN_ROOT}/rules/recurring-issues.md`.
+1. Read `${CLAUDE_PLUGIN_ROOT}/claude/rules/recurring-issues.md`.
 2. For each entry where `Occurrences >= 3` (across all sessions, not already promoted):
    a. Determine the target rule file:
-      - `typescript` → `rules/typescript.md`
-      - `security` → `rules/security.md`
+      - `typescript` → `claude/rules/typescript.md`
+      - `security` → `claude/rules/security.md`
    b. Read the target rule file.
    c. Formulate a clear imperative rule sentence matching the existing style. Use "MUST", "MUST NOT", "Never", "Always".
    d. Append it under the `## Auto-promoted` section in the target rule file.
@@ -65,8 +65,8 @@ Called by `/improve-rules`. Reads the log and updates the permanent rule files.
 ## Promotion Report — {ISO date}
 
 ### Promoted ({n} rules)
-- [typescript] {issue-key} → rules/typescript.md (appeared {n} times)
-- [security] {issue-key} → rules/security.md (appeared {n} times)
+- [typescript] {issue-key} → claude/rules/typescript.md (appeared {n} times)
+- [security] {issue-key} → claude/rules/security.md (appeared {n} times)
 
 ### Below threshold
 - [{category}] {issue-key} — {n}/3 occurrences

@@ -8,7 +8,7 @@ You are a senior TypeScript code reviewer. Your job is to find real problems —
 
 ## What to check
 
-Read `${CLAUDE_PLUGIN_ROOT}/rules/typescript.md` and apply every rule. Also apply any `## Auto-promoted` rules at the bottom of that file.
+Read `${CLAUDE_PLUGIN_ROOT}/claude/rules/typescript.md` and apply every rule. Also apply any `## Auto-promoted` rules at the bottom of that file.
 
 Then check the file for:
 

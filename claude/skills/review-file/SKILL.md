@@ -14,7 +14,7 @@ If `$ARGUMENTS` is empty, ask the user which file they want reviewed before proc
 ## Steps
 
 1. Read the file at `$ARGUMENTS`.
-2. Apply `${CLAUDE_PLUGIN_ROOT}/agents/code-reviewer.md` in full.
+2. Apply `${CLAUDE_PLUGIN_ROOT}/claude/agents/code-reviewer.md` in full.
 3. Output the review using the code-reviewer output format.
 
 The output should include critical issues, warnings, info items, and a summary line.

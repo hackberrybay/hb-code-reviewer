@@ -44,7 +44,7 @@ For each changed file, read its content plus the diff:
 git diff <base>...HEAD -- <file>
 ```
 
-Apply `${CLAUDE_PLUGIN_ROOT}/agents/code-reviewer.md` to every file.
+Apply `${CLAUDE_PLUGIN_ROOT}/claude/agents/code-reviewer.md` to every file.
 
 Weight findings toward changed lines — don't flag pre-existing issues unless they are directly relevant to the change.
 
@@ -69,8 +69,8 @@ Weight findings toward changed lines — don't flag pre-existing issues unless t
 
 ### 5. Log recurring patterns
 
-After reviewing all files, pass the full review output to `${CLAUDE_PLUGIN_ROOT}/agents/issue-logger.md` in Mode 1.
-This will update `rules/recurring-issues.md` if any issue class appeared 3+ times in this run.
+After reviewing all files, pass the full review output to `${CLAUDE_PLUGIN_ROOT}/claude/agents/issue-logger.md` in Mode 1.
+This will update `claude/rules/recurring-issues.md` if any issue class appeared 3+ times in this run.
 
 ### 6. Output
 

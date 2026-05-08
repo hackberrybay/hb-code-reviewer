@@ -5,22 +5,23 @@
     "email": "developer@hackberry.se"
   },
   "metadata": {
-    "description": "Hackberry team Claude Code plugin marketplace",
+    "description": "Hackberry team AI tooling marketplace",
     "version": "1.0.0"
   },
   "plugins": [
     {
-      "name": "hb-code-reviewer",
+      "name": "hb-ai-toolkit",
       "source": {
         "source": "url",
-        "url": "https://github.com/hackberrybay/hb-code-reviewer.git",
+        "url": "https://github.com/hackberrybay/hb-ai-toolkit.git",
         "ref": "main"
       },
-      "description": "Code quality review, best practices enforcement, and self-improving rules for the Hackberry TypeScript team.",
+      "description": "General-use Claude Code skills, agents, hooks, and shared AI tooling for the Hackberry team. Includes code review, security review, and self-improving rules.",
       "version": "1.0.0",
       "author": { "name": "Hackberry", "email": "developer@hackberry.se" },
-      "category": "code-quality",
+      "category": "tooling",
       "tags": [
+        "toolkit",
         "typescript",
         "review",
         "security",

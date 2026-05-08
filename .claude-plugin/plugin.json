@@ -1,15 +1,16 @@
 {
-  "name": "hb-code-reviewer",
+  "name": "hb-ai-toolkit",
   "version": "1.0.0",
-  "description": "Code quality review, best practices enforcement, and self-improving rules for TypeScript teams. Covers NestJS, React Native/Expo, and general TypeScript. Includes PR review, file review, OWASP security review, and a self-improvement loop.",
+  "description": "Hackberry's AI tooling toolkit. General-use Claude Code skills, agents, hooks, and rules — plus a place for Cursor and shared resources. Currently includes the code-quality + security review suite and a self-improving rule system.",
   "author": {
     "name": "Hackberry",
     "email": "developer@hackberry.se"
   },
-  "skills": "./skills/",
+  "skills": "./claude/skills/",
   "agents": [
-    "./agents/code-reviewer.md",
-    "./agents/security-reviewer.md",
-    "./agents/issue-logger.md"
-  ]
+    "./claude/agents/code-reviewer.md",
+    "./claude/agents/security-reviewer.md",
+    "./claude/agents/issue-logger.md"
+  ],
+  "hooks": "./claude/hooks/hooks.json"
 }

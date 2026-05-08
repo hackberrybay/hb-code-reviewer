@@ -16,13 +16,13 @@ If `$ARGUMENTS` is empty, review the current working directory.
 ### If reviewing a single file
 
 1. Read the file.
-2. Apply `${CLAUDE_PLUGIN_ROOT}/agents/security-reviewer.md` in full.
+2. Apply `${CLAUDE_PLUGIN_ROOT}/claude/agents/security-reviewer.md` in full.
 3. Output the security review.
 
 ### If reviewing a directory
 
 1. Use Glob to find all `.ts`, `.tsx`, `.js`, `.jsx` files under the path (exclude `node_modules`, `dist`, `build`, `.next`).
-2. For each file, apply `${CLAUDE_PLUGIN_ROOT}/agents/security-reviewer.md`.
+2. For each file, apply `${CLAUDE_PLUGIN_ROOT}/claude/agents/security-reviewer.md`.
 3. Aggregate all findings.
 4. Output:
 
